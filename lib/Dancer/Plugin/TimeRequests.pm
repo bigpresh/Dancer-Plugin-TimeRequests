@@ -36,9 +36,10 @@ before sub {
 };
 
 after sub {
-    my $elapsed = Time::HiRes:time() - var->{request_start_time};
     Dancer::Logger::debug(sprintf "Request to %s completed in %2.f",
-        request->path, $elapsed);
+        request->path,
+        var->{request_start_time} - Time::HiRes::time()
+    );
 };
 
 
