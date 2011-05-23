@@ -1,0 +1,58 @@
+NAME
+    Dancer::Plugin::TimeRequests - log how long each request took to process
+
+DESCRIPTION
+    A simple Dancer plugin to log how long each request took to process.
+    Useful to examine performance.
+
+    Future versions will likely add a stats page to show which routes take
+    most time, etc.
+
+SYNOPSIS
+    In your Dancer app, load this module:
+
+        use Dancer::Plugin::TimeRequests
+
+    Then, when your app is logging in debug mode, log messages will be
+    generated showing how logn each request look.
+
+AUTHOR
+    David Precious, `<davidp at preshweb.co.uk>'
+
+BUGS
+    Please report any bugs or feature requests to
+    `bug-dancer-plugin-timerequests at rt.cpan.org', or through the web
+    interface at
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Dancer-Plugin-TimeRequest
+    s. I will be notified, and then you'll automatically be notified of
+    progress on your bug as I make changes.
+
+SUPPORT
+    You can find documentation for this module with the perldoc command.
+
+        perldoc Dancer::Plugin::TimeRequests
+
+    You can also look for information at:
+
+    * RT: CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dancer-Plugin-TimeRequests
+
+    * AnnoCPAN: Annotated CPAN documentation
+        http://annocpan.org/dist/Dancer-Plugin-TimeRequests
+
+    * CPAN Ratings
+        http://cpanratings.perl.org/d/Dancer-Plugin-TimeRequests
+
+    * Search CPAN
+        http://search.cpan.org/dist/Dancer-Plugin-TimeRequests/
+
+ACKNOWLEDGEMENTS
+LICENSE AND COPYRIGHT
+    Copyright 2011 David Precious.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of either: the GNU General Public License as published
+    by the Free Software Foundation; or the Artistic License.
+
+    See http://dev.perl.org/licenses/ for more information.
+
