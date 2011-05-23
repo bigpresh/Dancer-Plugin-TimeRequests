@@ -39,7 +39,7 @@ before sub {
 after sub {
     Dancer::Logger::debug(sprintf "Request to %s completed in %2.f",
         request->path,
-        vars->{request_start_time} - Time::HiRes::time()
+        Time::HiRes::time() - vars->{request_start_time};
     );
 };
 
