@@ -2,6 +2,7 @@ package Dancer::Plugin::TimeRequests;
 
 use strict;
 use Dancer::Plugin;
+use Dancer qw(:syntax);
 use Time::HiRes;
 
 our $VERSION = '0.01';
