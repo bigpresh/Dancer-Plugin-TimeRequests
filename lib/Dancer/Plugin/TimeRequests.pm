@@ -24,13 +24,14 @@ time, etc.
 
 In your Dancer app, load this module:
 
-    use Dancer::Plugin::TimeRequests
+    use Dancer::Plugin::TimeRequests;
 
 Then, when your app is logging in debug mode, log messages will be generated
-showing how logn each request look.
+showing how logn each request took:
+
+    Request to /foo completed in 4.0011 seconds in ....
 
 =cut
-
 
 before sub {
     var request_start_time => Time::HiRes::time();
@@ -42,7 +43,6 @@ after sub {
         Time::HiRes::time() - vars->{request_start_time}
     );
 };
-
 
 
 =head1 AUTHOR
