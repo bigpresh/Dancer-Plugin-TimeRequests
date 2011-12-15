@@ -2,7 +2,6 @@ package Dancer::Plugin::TimeRequests;
 
 use strict;
 use Dancer::Plugin;
-use Dancer qw(:syntax);
 use Time::HiRes;
 
 our $VERSION = '0.02';
@@ -33,11 +32,11 @@ showing how logn each request took:
 
 =cut
 
-before sub {
+hook 'before' => sub {
     var request_start_time => Time::HiRes::time();
 };
 
-after sub {
+hook 'after' => sub {
     Dancer::Logger::debug(sprintf "Request to %s completed in %.4f seconds",
         request->path,
         Time::HiRes::time() - vars->{request_start_time}
@@ -101,7 +100,7 @@ by the Free Software Foundation; or the Artistic License.
 
 See http://dev.perl.org/licenses/ for more information.
 
-
+This plugin was changed by Andrew Inishev, 2011
 =cut
-
+register_plugin;
 1; # End of Dancer::Plugin::TimeRequests
