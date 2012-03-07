@@ -1,5 +1,9 @@
 Revision history for Dancer-Plugin-TimeRequests
 
+0.03    2012-03-07
+        Use hook keyword rather than deprecated before/after keywords.
+        Thanks to melmothX on IRC for reporting.
+
 0.02    2011-05-31
         Adding Dancer as a prereq would likely be helpful.  (D'oh!)
 
