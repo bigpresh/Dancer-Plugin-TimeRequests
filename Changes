@@ -1,5 +1,8 @@
 Revision history for Dancer-Plugin-TimeRequests
 
+0.04    2012-11-21
+        Add per-route average execution time reporting feature.
+
 0.03    2012-03-07
         Use hook keyword rather than deprecated before/after keywords.
         Thanks to melmothX on IRC for reporting.
