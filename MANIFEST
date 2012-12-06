@@ -6,3 +6,4 @@ lib/Dancer/Plugin/TimeRequests.pm
 t/00-load.t
 t/manifest.t
 t/pod.t
+example/example.pl
