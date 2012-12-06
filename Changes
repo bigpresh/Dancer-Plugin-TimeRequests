@@ -1,5 +1,9 @@
 Revision history for Dancer-Plugin-TimeRequests
 
+0.05    2012-12-06
+        Declaring HTML::Table as a dep would be useful.
+        Thanks to Andreas Koenig for reporting this in RT #81750.
+
 0.04    2012-11-21
         Add per-route average execution time reporting feature.
 
