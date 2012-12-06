@@ -15,6 +15,7 @@ WriteMakefile(
         'Test::More' => 0,
         'Time::HiRes' => 0,
         'Dancer' => 1.3050,
+        'HTML::Table' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Dancer-Plugin-TimeRequests-*' },
