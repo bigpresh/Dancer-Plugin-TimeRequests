@@ -8,7 +8,7 @@ use List::Util;
 use List::MoreUtils;
 use Time::HiRes;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 NAME
 
